@@ -77,7 +77,7 @@ def get_new_img(img,flat,normalize_csum,img_name):
       :return new_img
       '''
       # 从展平图像数组 flat 中每个索引的累积和中获取值，并将其设置为 new_img
-      new_img = normalize_csum[flat]
+      new_img = normalize_csum[flat] 
       plt.hist(new_img, bins=50)   # 分布更均匀的直方图
       plt.title(img_name+': Output Image Histogram')
       plt.show()
